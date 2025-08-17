@@ -1,0 +1,8 @@
+name: Print file
+on: [push]
+jobs:
+  print_my_file:
+    run-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: cat Hello_World.txt
